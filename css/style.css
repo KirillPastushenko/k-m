@@ -5812,25 +5812,18 @@
 	#footer {
 	  width: 100% !important;
 	}
-	#shoes-triggers {
-	  padding-top: 12px;
-	}
+
 	#vk-widget {
 	  width: 100% !important;
 	}
 	.footer-space {
 	  height: 100px !important;
 	}
-	#shoes-triggers {
-	  flex-wrap: wrap!important;
-	  justify-content: center!important;
-	  align-items: center!important;
-	  align-content: center!important;
-	}
-	.shoes-trigger {
-	  width: 30%!important
-	}
-  }
+    
+  .shoes-triggers-wrapper {padding-top: 12px;}
+  .shoes-triggers-wrapper{flex-wrap: wrap!important;justify-content: center!important;align-items: center!important; align-content: center!important;}
+  .shoes-trigger {width: 30%!important}
+}
   
   @media only screen and (max-width:976px) {
 	#top-menu {
@@ -6108,14 +6101,13 @@
   #bs-example-navbar-collapse-1 .navbar-nav>.dropdown.cropt_mobile{
 	margin-bottom: 5px;
   }
+
+
   @media screen and (max-width: 767px) {
 	#sliza_widget_btn {
 	  display: none;
 	}
-	#shoes-triggers {
-	  flex-wrap: wrap !important;
-	  min-height: auto !important;
-	}
+	.shoes-triggers-wrapper {flex-wrap: wrap !important; min-height: auto !important;}
 	#center-new-items.main-page {
 	  margin-top: 100px
 	}
@@ -7859,7 +7851,7 @@
   .footer-space {
 	width: 100%;
 	background-color: rgb(255, 255, 255);
-	height: 100px;
+	height: 122px;
   }
   
   .footer-menu ul li {
@@ -7871,32 +7863,10 @@
 	margin: 20px 0;
   }
   
-  .shoes-trigger-item {
-	font-weight: 600;
-	white-space: nowrap;
-	line-height: 1.5;
-	padding-top: 5px;
-	font-size: 12px;
-  }
-  
-  #shoes-triggers {
-	width: calc(100% - 28px);
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
-	align-content: space-between;
-	border-bottom: solid 1px #AB2C84;
-	margin-left: 14px;
-	margin-right: 14px;
-	padding-top: 25px;
-	min-height: 108px;
-  }
-  
-  .shoes-trigger {
-	text-align: center;
-  }
+  .shoes-trigger-item {font-weight: 600;white-space: nowrap;line-height: 1.5;font-size: 12px;}
+  .shoes-triggers-wrapper {	width: calc(100% - 28px);display: flex;	flex-direction: row;	flex-wrap: nowrap;	justify-content: space-between;	align-items: center;	align-content: space-between;	border-bottom: solid 1px #AB2C84;	margin-left: 14px;	margin-right: 14px;	padding-top: 25px;	min-height: 108px;  gap: 25px 15px;padding-bottom: 10px;}
+  .shoes-trigger {display: flex;flex-direction: column;align-items: center;gap: 5px;/*! width: 20%; */}
+  .shoes-trigger img{width: 67px;}
   
   .quant-change-button.max_count:hover,
   .quant-change-button.max_count {
