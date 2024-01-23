@@ -7512,7 +7512,7 @@
   }
   
   #shoes-top-img a {
-	margin-right: 36px;
+	/*! margin-right: 36px; */
 	margin-bottom: 27px;
   }
   
@@ -7538,15 +7538,12 @@
   #shoes-center-img,
   #shoes-top-img {
 	width: 100%;
-	float: left;
-	margin-bottom: 20px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-between;
-	align-items: stretch;
 	align-content: stretch;
-	min-height: 198px;
+	gap: 20px;
   }
   
   
@@ -7587,7 +7584,8 @@
   }
   
   #shoes-top-img a>img {
-	width: 100%
+	width: 100%;
+	height: auto;
   }
   
   .dropdown-menu>li>a {
