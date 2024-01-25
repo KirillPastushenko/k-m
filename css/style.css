@@ -1148,10 +1148,9 @@
 	margin-bottom: 10px;
 	border-radius: 5px;
 	padding: 8px;
-	width: auto;
+	width: 196px;
 	height: auto;
 	border: 2px solid rgb(255, 255, 255);
-	width: 239px;
   }
   
   .gallery .new-items-image {
@@ -7630,21 +7629,24 @@
 	background: transparent;
 	border: none;
 	display: block;
-	height: 60px;
 	z-index: 23;
 	color: transparent;
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5' viewBox='0 0 24 44'%3E%3Cpath fill='none' d='m1.5 1.5 20.3 20.3L1.4 42' style='fill:%232a2a2a;fill-opacity:0;stroke:%232a2a2a;stroke-width:2px'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 45px;
+	height: 47px;
   }
   
   .slick-next {
-	background: url(../images/arrow-next.png) no-repeat;
-	left: 95%;
+	right: 0;
 	top: 40%;
   }
   
   .slick-prev {
-	background: url(../images/arrow-prev.png) no-repeat;
-	left: 7px;
-	top: 40%
+	left: 0;
+	top: 40%;
+	transform: rotate(180deg);
   }
   
   .sort-head.sort-discount,
