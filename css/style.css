@@ -5767,19 +5767,12 @@
 	  min-width: 103px !important;
 	}
 	.footer-contacts {
-	  width: 104px !important;
+	  width: 128px !important;
 	  margin: 0px 0px 0px 27px;
 	}
 	.footer-pay {
 	  width: 217px !important;
 	  min-width: 217px !important;
-	}
-	.footer-logo {
-	  width: 155px !important;
-	  min-width: 155px !important;
-	}
-	.footer-soc {
-	  right: -15px;
 	}
 	#footer {
 	  width: 100%!important;
@@ -6395,13 +6388,8 @@
 	  width: 100%!important;
 	  margin: 0px 0px 0px 0px;
 	}
-	.footer-menu-3 {
-	  width: 200px !important;
-	  position: absolute !important;
-	  top: 117px;
-	  left: 209px;
-	  line-height: 15px;
-	}
+	.footer-menu-3 {width: 200px !important; position: absolute !important;top: 117px; left: 209px; line-height: 15px; margin: 35px 0 0 0;}
+  .footer-logo{}
 	.zoomPad {
 	  width: 100%!important;
 	  ;
@@ -6586,10 +6574,7 @@
 	  float: left;
 	  margin-top: 0px;
 	}
-	.footer-menu-3 {
-	  top: 169px;
-	  left: 199px;
-	}
+	.footer-menu-3 {position: static !important; width: 100% !important;margin: 15px 0 0 0;}
 	.main-product-list {
 	  flex-direction: column !important;
 	  align-items: flex-start !important;
@@ -6856,21 +6841,13 @@
 	}
   }
   
-  @media only screen and (max-width: 360px) {
-	.footer-menu-3 {
-	  top: 169px;
-	  left: 164px;
-	}
-	.footer-soc {
-	  position: absolute !important;
-	  left: 188px;
-	}
-	.footer-wrap {
-	  padding: 22px 10px 40px 17px !important;
-	}
-  }
+@media only screen and (max-width: 360px) {
+	.footer-menu-3 {top: 169px; left: 164px;}
+	.footer-soc { position: absolute !important;left: 188px; bottom: 0;}
+	.footer-wrap { padding: 22px 10px 40px 17px !important;}
+}
   
-  @media only screen and (max-width: 359px) {
+@media only screen and (max-width: 359px) {
 	#sort-icons {
 	  position: static!important;
 	  width: 100%
@@ -7697,18 +7674,18 @@
   
   .footer-menu-3 {
 	display: inline-block;
-	width: 60%;
 	height: 17px;
 	vertical-align: bottom;
 	position: relative;
 	bottom: 20px;
+	width: calc(100% - 378px);
   }
   
   .footer-pay {
 	display: inline-block;
-	width: 263px;
+	width: 220px;
 	vertical-align: top;
-	min-width: 230px;
+	min-width: 220px;
   }
   
   .footer-contacts {
@@ -7723,7 +7700,7 @@
   
   .footer-logo {
 	display: inline-block;
-	width: 23%;
+	width: 185px;
 	vertical-align: bottom;
 	font-family: "AdineKirnberg";
 	color: #fff;
@@ -8921,37 +8898,30 @@
 	  width: 50%;
 	}
   }
-  @media only screen and (max-width:1099px){
-	.category-products-listing .prodblock.prodblock-category{
-	  flex: 0 0 33.333%;
-	  max-width: 33.333%;
-	} 
-	.proddivtop img{
-	  height:auto;
-	  object-fit: unset;
-	  object-position: unset;
-	} 
-	.krt-product-list__item .input-group input{
-	  padding: 0;
-	}
-  }
-  @media only screen and (min-width:768px) and (max-width:1080px){
-	.footer-menu-3{
-	  width: 50%;
-	}
-  }
-  @media only screen and (min-width:768px) and (max-width:1024px){
-	.footer-soc{
-	  float: right;
-	  bottom: 0;
-	}
-  }
-  @media only screen and (max-width:991px){
-	.krt-modal-content{
-	  width: 430px;
-	} 
-  }
-  @media only screen and (min-width:768px){
+@media only screen and (max-width:1099px){
+  .category-products-listing .prodblock.prodblock-category{flex: 0 0 33.333%;max-width: 33.333%;} 
+	.proddivtop img{height:auto;object-fit: unset;object-position: unset;} 
+	.krt-product-list__item .input-group input{ padding: 0;}
+}
+
+@media only screen and (min-width:768px) and (max-width:1080px){
+	.footer-menu-3{width: 50%;}
+  .footer-contacts{right: 0}
+   #button-up{bottom: 134px;}
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+	.footer-soc{ float: right; bottom: 0;}
+  .footer-contacts{right: 75px;margin-left: 0;}
+  .footer-pay{margin-left: 10px;}
+}
+ 
+
+@media only screen and (max-width:991px){
+  .krt-modal-content{width: 430px;} 
+}
+
+@media only screen and (min-width:768px){
 	#bs-example-navbar-collapse-1{
 	  /* height: 1035px; */
     height: calc(100vh - 0px);
@@ -8960,11 +8930,10 @@
 	  display: flex!important;
 	  flex-wrap: nowrap;
 	}
-  }
-  @media only screen and (max-width:767px){
-	#wishlist-title{
-	  display: inline;
-	}
+}
+@media only screen and (max-width:767px){
+ .footer-contacts{}
+  #wishlist-title{display: inline;}
 	.d-mob-block{
 	  display: block;
 	}
@@ -9299,6 +9268,13 @@
 
 @media (max-width: 501px) {
   .gallery .new-items-details{width: 100%;height: 38px;}
+}
+
+
+@media (max-width: 370px) {
+  .footer-logo{font-size: 64px;line-height: 31px;}
+  .footer-soc a{width: 30px;height: 30px;}
+  .footer-soc{right: 0;left: inherit;bottom: 58px;position: absolute;}
 }
 
 .container-info-block .container-info-body div {
