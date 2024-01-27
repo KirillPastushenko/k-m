@@ -474,10 +474,10 @@
             <img src="images/aktsii.png" width="167" height="93">
         </div>
         <div id="aktcia-text">
-            <span style="color: red; font-size: 22px; font-weight: bold;">УРА! АКЦИИ!</span><br>
-            <b>1. Бесплатная доставка Почтой России - <a href="https://www.krasotka-market.ru/blog/16/" target="_blank">подробнее...</a></b><br>
-            2. Снижена минимальная сумма закупки на первый заказ - от 2000 руб.<br>
-            <span style="margin-left: 15px; font-style: italic; font-size: 17px; font-weight: 0;">Акции действуют до 31.01.2024г. Вперед за покупками!</span>
+            <span style="color: red; font-size: 22px; font-weight: bold;">УРА! АКЦИИ!</span>
+            <b>1. Бесплатная доставка Почтой России - <a href="https://www.krasotka-market.ru/blog/16/" target="_blank">подробнее...</a></b>
+            2. Снижена минимальная сумма закупки на первый заказ - от 2000 руб.
+            <span style="font-style: italic; font-size: 17px;">Акции действуют до 31.01.2024г. Вперед за покупками!</span>
         </div>
     </div>
 	
@@ -492,17 +492,15 @@
 	</div>
 
 	<div class="se-info">
-		<div><span style="font-size: 14px;">Предлагаем вашему вниманию широкий
- ассортимент одежды, обуви и других товаров для всей семьи. Наши 
-поставщики это ведущие производители России, Турции, Киргизии и Китая. 
+		<div><span style="font-size: 14px;">Предлагаем вашему вниманию широкий ассортимент одежды, обуви и других товаров для всей семьи. Наши поставщики это ведущие производители России, Турции, Киргизии и Китая. 
 Осуществляя </span>прямые поставки&nbsp;мы предоставляем своим партнерам дешевые цены на весь ассортимент товаров<span style="font-size: 14px;">.</span></div><div><span style="font-size: 14px;">&nbsp;</span></div><div><span style="font-size: 14px;">Продажа осуществляется со склада в Москве - доставка до ТК бесплатно - работаем как с юридическими, так и физическими лицами.</span></div><div><span style="font-size: 14px;"><br></span></div><div><span style="color: rgb(116, 27, 71); font-family: Verdana; font-weight: 700; white-space: pre-wrap;">Минимальная сумма первого заказа 5000 рублей, последующих от 3000 руб.</span><span style="font-size: 14px;"><br></span></div><div><span style="font-size: 14px;">&nbsp;</span></div><div><i><span style="font-size: 14px;">«</span><span style="font-size: 14px;">Красотка Маркет»&nbsp;- одежда и обувь на каждый день! Модно, дешево, практично!</span></i></div>
     </div>
 
 
     <div class="shoes-triggers-wrapper">
+        <div class="shoes-trigger"><img src="images/i3.svg"> <div class="shoes-trigger-item">ПРОДАЖА РЯДАМИ И БЕЗ РЯДОВ</div></div>
         <div class="shoes-trigger"><img src="images/i1.svg"> <div class="shoes-trigger-item">НАЛИЧИЕ НА СКЛАДЕ</div></div>
         <div class="shoes-trigger"><img src="images/i2.svg"> <div class="shoes-trigger-item">НИЗКИЕ ЦЕНЫ</div></div>
-        <div class="shoes-trigger"><img src="images/i3.svg"> <div class="shoes-trigger-item">ПРОДАЖА РЯДАМИ И БЕЗ РЯДОВ</div></div>
         <div class="shoes-trigger"><img src="images/i4.svg"> <div class="shoes-trigger-item">БЕСПЛАТНАЯ ДОСТАВКА</div></div>
         <div class="shoes-trigger"><img src="images/i5.svg"> <div class="shoes-trigger-item">СОВРЕМЕННЫЙ СЕРВИС</div></div>
     </div>
@@ -917,6 +915,14 @@
                             slidesToScroll: 1
                         }
 					},
+                    {
+                        breakpoint: 501,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            variableWidth: false,
+                        }
+                    },
 
 				]
 			});
@@ -1874,20 +1880,28 @@ window.onscroll = function() {
                 speed: 300,
                 slidesToShow: 1,
                 slidesToScroll: 4,
-                variableWidth: true,
+
                 responsive: [
                     {
-                    breakpoint: 1024,
+                        breakpoint: 1024,
                         settings: {
                             slidesToShow: 3,
                             slidesToScroll: 3,
                         }
                     },
                     {
-                    breakpoint: 600,
+                        breakpoint: 600,
                         settings: {
                             slidesToShow: 2,
                             slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 501,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            variableWidth: false,
                         }
                     },
                 ]
