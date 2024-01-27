@@ -1081,7 +1081,7 @@
 	margin-bottom: 10px;
 	border-radius: 5px;
 	padding: 10px;
-	width: auto;
+	width: 200px;
 	height: auto;
 	border: 2px solid rgb(255, 255, 255);
   }
@@ -1105,6 +1105,7 @@
   .home-page-list .new-items-image {
 	height: 275px;
 	overflow: hidden;
+	width: auto;
   }
   
   .home-page-list .new-items-details {
